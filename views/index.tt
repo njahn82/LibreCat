@@ -9,19 +9,18 @@
     <div id="banner">
       <h1>[% h.loc("header.title") %]</h1>
     </div>
-    <div class="ltIEten">
-      <h3>Please note that we no longer support Internet Explorer versions 8 or 9 (or earlier).</h3>
-      <p>We recommend upgrading to the latest <a href="http://windows.microsoft.com/ie" target="_blank">Internet Explorer</a>, <a href="https://chrome.google.com" target="_blank">Google Chrome</a>, or <a href="https=//mozilla.org/firefox/" target="_blank">Firefox</a>.</p>
-    </div>
     <div class="row margin-top1">
+      <div class="col-md-12">
+          <p>Scientific communication takes place in publications and publications tell the profile of Göttingen Campus. What topics do our researchers work on, where do they publish and with whom? Learn more about the power of Göttingen Campus on our public research database Göttingen Research Online that contains information of [% stats.publications %] publications and [% stats.researchers %] authors.</p>
+      </div>
       <div class="col-md-12">
         <ul class="nav nav-tabs" id="indexTab">
           <li class="active"><a href="/">[% h.loc("tabs.home") %]</a></li>
           <li><a href="/publication[% IF qp.style OR qp.limit %]?[% END %][% IF qp.style %]style=[% qp.style %][% IF qp.limit %]&[% END %][% END %][% IF qp.limit %]limit=[% qp.limit %][% END %]">[% h.loc("tabs.publications") %]</a></li>
-          <li><a href="/data[% IF qp.style OR qp.limit %]?[% END %][% IF qp.style %]style=[% qp.style %][% IF qp.limit %]&[% END %][% END %][% IF qp.limit %]limit=[% qp.limit %][% END %]">[% h.loc("tabs.data_publications") %]</a></li>
+          <!-- <li><a href="/data[% IF qp.style OR qp.limit %]?[% END %][% IF qp.style %]style=[% qp.style %][% IF qp.limit %]&[% END %][% END %][% IF qp.limit %]limit=[% qp.limit %][% END %]">[% h.loc("tabs.data_publications") %]</a></li> -->
           <li><a href="/person">[% h.loc("tabs.authors") %]</a></li>
-          <li><a href="/project">[% h.loc("tabs.projects") %]</a></li>
-          <li><a href="/department">[% h.loc("tabs.departments") %]</a></li>
+          <!-- <li><a href="/project">[% h.loc("tabs.projects") %]</a></li> -->
+          <!-- <li><a href="/department">[% h.loc("tabs.departments") %]</a></li> -->
         </ul>
       </div>
     </div>
@@ -29,7 +28,7 @@
       <div class="col-md-12 tab-content">
         <div class="tab-pane active" id="home">
           <div class="row"><!-- begin outer row -->
-            <div class="col-sm-9"><!-- begin left col -->
+            <div class="col-md-12"><!-- begin left col -->
               <div class="row">
                 <div class="col-md-12">
                   <div class="row">
@@ -46,14 +45,41 @@
                   </div>
                 </div>
               </div>
-              <div class="row margin-top2">
+              <div class="row" style="margin-top: 2em">
+                <div class="col-md-6">
+                  <h2>Add your Research</h2>
+                  <p>Register with your university’s identity, find your publications imported from Web of Science or PubMed, and claim them with a click. Include new publications or projects, and monitor your personal information on your individual dashboard.</p>
+                </div>
+                <div class="col-md-6" style="text-align: center">
+                  <img src="images/img_research.jpg" alt="" style="max-width: 100%">
+                </div>
+              </div>
+              <div class="row" style="margin-top: 2em">
+                <div class="col-md-6" style="text-align: center">
+                  <img src="images/img_publications.jpg" alt="" style="max-width: 100%">
+                </div>
+                <div class="col-md-6">
+                  <h2>Search for publications</h2>
+                  <p>Export publication lists for individuals, departments or schools, automatically update your publication lists on websites and for applications, follow up on citations and use in social media. Discover collaboration networks and research profiles.</p>
+                </div>
+              </div>
+              <!-- <div class="row" style="margin-top: 2em">
+                <div class="col-md-6">
+                  <h2>Access without boundaries</h2>
+                  <p>Get directly to publications and data sets, download and reuse them directly. Find zzz Open Access publications from yyy authors and monitor the transition of Göttingen Campus to transparency and openness.</p>
+                </div>
+                <div class="col-md-6">
+                  (image)
+                </div>
+              </div> -->
+              <!-- <div class="row margin-top2">
                 <div class="col-md-12">
                   <p class="h3"><span class="fa fa-check fa-1x"></span> <span class="statalign">[% stats.publications %]</span> <a href="/publication">[% h.loc("home.stats.publications") %]</a></p>
                   <p class="h3"><span class="fa fa-check fa-1x"></span> <span class="statalign">[% stats.researchdata %]</span> <a href="/data">[% h.loc("home.stats.data_publications") %]</a></p>
                   <p class="h3"><span class="fa fa-check fa-1x"></span> <span class="statalign">[% stats.oahits %]</span> <a href="/publication?q=fulltext=1">[% h.loc("home.stats.oa_publications") %]</a></p>
                   <p class="h3"><span class="fa fa-check fa-1x"></span> <span class="statalign">[% stats.projects %]</span> <a href="/project">[% h.loc("home.stats.projects") %]</a></p>
                 </div>
-              </div>
+              </div> -->
             </div><!-- end left col -->
           </div><!-- end outer row -->
         </div><!-- end tab-pane -->

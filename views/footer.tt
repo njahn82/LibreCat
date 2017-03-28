@@ -2,23 +2,45 @@
 
 </div><!-- container -->
 
-<div id="push"></div><!-- for sticky footer -->
-
 </main>
 
 <footer class="panel-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="col-md-4 col-sm-5">
-          [% FOR feature IN h.config.features.views.footer %]
-          [% tmpl =  feature.template _ '.tt'; INCLUDE $tmpl %]
-          [% END %]
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Contact</h3>
+                <address>
+                    <strong>Support Team</strong><br>
+                    Daniel Beucke<br>
+                    <a href="tel:+495513913432">+49 551 39 13 432</a><br>
+                    <a href="mailto:support-gro@sub.uni-goettingen.de">support-gro@sub.uni-goettingen.de</a>
+                </address>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-md-4" style="text-align: center; margin-top: 2em">
+                    <p><a href="https://www.uni-goettingen.de"><img src="/images/logo_uni_goettingen_white.png" alt=""></a></p>
+                </div>
+                <div class="col-md-4" style="text-align: center; margin-top: 1em">
+                    <p><a href="https://www.sub.uni-goettingen.de"><img src="/images/logo_sub_goettingen_white.png" alt="" width="300px"></a></p>
+                </div>
+                <div class="col-md-4" style="text-align: center; margin-top: 2em">
+                    <p>[% h.loc("footer.powered_by") %]&nbsp;&nbsp;<a href="//librecat.org/"><img src="/images/librecat_logo.png" alt="" height="50px"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+<div class="container" style="margin-top: 1em">
+    <div class="row">
+        <div class="col-sm-12 small text-uppercase">
+            <p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license.</p>
+        </div>
+    </div>
+</div>
 </body>
 
 <!-- END footer.tt -->

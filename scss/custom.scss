@@ -1,0 +1,32 @@
+.panel-footer {
+    margin-top: 3em;
+    background-color: $brand-primary;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+.glyphicon {
+    margin-right: 0.33em;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    border-top: 0;
+    background-color: #163776;
+    z-index: 999;
+    border-color: none;
+}
+
+.navbar-header {
+    height: 85px;
+}
+
+.navbar-inverse {
+    border-color: none;
+}
