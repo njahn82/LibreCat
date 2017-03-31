@@ -28,7 +28,15 @@
                     <p><a href="https://www.sub.uni-goettingen.de"><img src="/images/logo_sub_goettingen_white.png" alt="" width="300px"></a></p>
                 </div>
                 <div class="col-md-4" style="text-align: center; margin-top: 2em">
-                    <p>[% h.loc("footer.powered_by") %]&nbsp;&nbsp;<a href="//librecat.org/"><img src="/images/librecat_logo.png" alt="" height="50px"></a></p>
+                    <p><a href="http://www.eresearch.uni-goettingen.de/"><img src="/images/era_logo.png" alt="" height=""></a></p>
+                    <!-- <p>[% h.loc("footer.powered_by") %]&nbsp;&nbsp;<a href="//librecat.org/"><img src="/images/librecat_logo.png" alt="" height="50px"></a></p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="" style="text-align: center; margin-top: 2em">
+                    <p style="text-align: center">[% h.loc("footer.powered_by") %]&nbsp;&nbsp;<a href="//librecat.org/"><img src="/images/librecat_logo.png" alt="" height="50px"></a></p>
                 </div>
             </div>
         </div>
